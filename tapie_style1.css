@@ -1,0 +1,125 @@
+/* 메인 페이지 설정 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    background-color: #f8f9fa; 
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 맨 위 메뉴 */
+header {
+    background: linear-gradient(135deg, white, #000000); 
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header img {
+    width: 120px; 
+    border-radius: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.316);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+.Menubar {
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+    margin-bottom: 10px;
+}
+
+.Menubar button {
+    background: none;
+    border: none;
+    margin: 0 15px;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: #000000;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Menubar button:hover {
+    color: #7076779e;
+}
+
+/* 메인 영역 */
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section, div {
+    background: white;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #3c3d3d;
+    border-left: 5px solid #1f2122;
+    padding-left: 15px;
+    margin-top: 0;
+}
+
+h3 {
+    color: #444;
+    margin-top: 25px;
+}
+
+details summary{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #323333;
+}
+
+ul, ol {
+    padding-left: 15px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* form */
+.form {
+    text-align: center;
+    background: #eef2f3;
+}
+
+.form select {
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* 아래칸 */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: #333;
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+footer mark {
+    background: #004e92;
+    border-radius: 5px;
+    color: white;
+    padding: 2px 5px;
+}
