@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        details{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        details summary{
+            border: 2px solid #000000;
+            width: fit-content;
+            margin: 10px auto;
+            border-radius: 5px;
+            padding: 10px 10px;
+        }
+        .form {
+            text-align: center;
+        }
+
+        .form h4{
+            color: #fffefe;
+            background-color: rgb(42, 41, 41);
+            border-radius: 5px;
+            border: 1px solid #fffefe;
+            padding: 5px 10px;
+            width: fit-content;
+            margin: 10px auto;
+            text-align: center;
+        }
+        .form p{
+            color: #fffefe;
+            background-color: rgb(42, 41, 41);
+            border-radius: 5px;
+            border: 1px solid #fffefe;
+            padding: 5px 10px;
+            width: fit-content;
+            margin: 10px auto;
+            text-align: center;
+        }
+        .form select {
+            padding: 8px 15px;
+            border-radius: 5px;
+            border: 1px solid #fffefe;
+        }
+    </style>
+</head>
+<body>
+    <details>
+            <summary>자기소개 페이지 만들어주고 싶음?</summary>
+            <form class="form">
+                <h4>제대로 쓸 것을 약속한다.</h4>
+                <select>
+                    <option>예</option>
+                    <option>아니요</option>
+                </select>
+                <p>1. 이름을 입력하세요</p>
+                <input type="text" placeholder="이름">
+                <p>2. 만들고 싶은 페이지 제목을 쓰세요</p>
+                <input type="text" placeholder="페이지 제목">
+                <p>3. 페이지 레이아웃은 어떤 스타일로 해드릴까?</p>
+                <input type="radio" id="style1" name="layout" value="minimalist">
+                <label for="style1"> 미니멀리스트</label><br>
+                <input type="radio" id="style2" name="layout" value="pitch deck">
+                <label for="style2"> 피치 데크 (Pitch Deck)</label><br>
+                <input type="radio" id="style3" name="layout" value="3dlayout">
+                <label for="style3"> 3D 레이아웃</label>
+                <p>4. 자기 자신을 설명할 수 있는 것을 많이 써주세요 (넣고 싶은 기능, 스타일 등)</p>
+                <textarea placeholder="이게 있어야 뭐라도 만들어준다"></textarea>
+                <button type="submit">제출하기</button>
+            </form>
+        </details>
+</body>
+</html>
