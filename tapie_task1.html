@@ -1,82 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>할림이 자기소개 페이지</title>
-        <link rel="stylesheet" href="tapie_style1.css">
-    </head>
-    <body>
-        <header>
-            <nav class="Menubar">
-                <button type="button" onclick="">할림에 대해</button>
-                <button type="button" onclick="">걸어온 길</button>
-                <button type="button" onclick="">자기소개 페이지 의뢰</button>
-            </nav>
-            <img src="Original Bright (26 update)..png">
-            <h1>무함마드 할림 아우와</h1>
-            <h2 style="border-left: 5px; color: white;">: 할림이의 세계에 온 걸 환영해!</h2>
+
+<head>
+    <title>할림이 자기소개 페이지</title>
+    <link rel="stylesheet" href="tapie_style1.css">
+</head>
+
+<body>
+    <header>
+        <nav class="Menubar">
+            <button type="button" onclick="location.href='tapie_task1-about.html'">할림에 대해</button>
+            <button type="button" onclick="location.href='tapie_task1-achi.html'">걸어온 길</button>
+            <button type="button" onclick="location.href='tapie_task1-form.html'">자기소개 페이지 의뢰</button>
+        </nav>
+        <img src="Original Bright (26 update)..png">
+        <h1>무함마드 할림 아우와</h1>
+        <h2 style="border-left: 5px; color: white;">: 할림이의 세계에 온 걸 환영해!</h2>
     </header>
     <main>
         <div class="About">
             <h2>할림이란?</h2>
             <p>: 한국에서 태어나고 자란 인도네시아인 무슬림 학생이다.<br>꿈을 향해 나아가며 항상 새로운 것을 배우는 것을 즐긴다.</p>
-        <div class="Personal_traits">
-            <h2>나의 강점 3가지</h2>
-            <h3>01 프로그래밍 언어</h3></h3>
-            <p>파이썬과 웹개발을 잘한다.</p>
-            <h3>02 과학적 사고</h3>
-            <p>TJ 성향이 강한 사람 때문인지 과학 (특히 물리)적 사고를 좋아한다.</p>
-            <h3>03 언어 능력</h3>
-            <p>인도네시아어, 한국어, 영어 등 3개국어에 능통하다</p>
-        </div>
-         <div class="Achievement">
-            <h2>내가 걸어온 길</h2>
-            <h3>성과 | Achievement</h3>
-            <details>
-                <summary>많지는 않을껄...?</summary>
-                <ul>
-                    <li>2026.03 선린인터넷고등학교 다문화 골든벨 2등</li>
-                    <li>2026.03 선린인터넷고등학교 테이피 (TAPIE) 면접 합격</li>
-                    <li>2025 온 가족 북웨이브 100일 챌린지 수상</li>
-                    <li>2025.11 서울로봇고등학교 영재교육원 수료</li>
-                    <li>서울로봇고등학교 영재교육원 최우수상</li>
-                    <li>2025 영원중학교 교내 전람회 은상</li>
-                    <li>2025 한국이슬람교 꾸란 낭송대회 장려상</li>
-                    <li>2025 한국이슬람교 초승달장학금 수여</li>
-                    <li>2024 한국사능력검정시험 3급</li>
-                    <li>2024 이중언어페스티벌 장려상</li>
-                </ul>
-            </details>
-            <h3>포트폴리오 | Portofolio</h3>
-            <ol>
-                <li>첫 구글 사이트 제작 “Histolog”</li>
-                <li>브이로그 리브토피아 영상 제작 (필모라)</li>
-                <li>캡컷 및 MS 클립챔프를 활용한 영상 편집</li>
-                <li>스크래치에서 만든 수학 퀴즈 프로그램</li>
-                <li>깃허브 리포 (저장소) 운영 → halim-dev</li>
-                <li>파이썬의 Turtle 모듈을 활용한 박스-뮬러 알고리즘 프로그램 개발 경험</li>
-            </ol>
-        </div>
-        <form class="form">
-            <h4>자기소개 페이지 만들고 싶어?</h4>
-            <select>
-                <option>예</option>
-                <option>아니요</option>
-            </select>
-            <p>1. 이름을 입력하세요</p>
-            <input type="text" placeholder="이름">
-            <p>2. 만들고 싶은 페이지 제목을 쓰세요</p>
-            <input type="text" placeholder="제목">
-            <p>3. 페이지 레이아웃은 어떤 스타일로 해드릴까?</p>
-             <input type="radio" id="style1" name="layout" value="minimalist">
-            <label for="style1"> 미니멀리스트</label><br>
-            <input type="radio" id="style2" name="layout" value="pitch deck">
-            <label for="style2"> 피치 데크 (Pitch Deck)</label><br>
-            <input type="radio" id="style3" name="layout" value="3dlayout">
-            <label for="style3"> 3D 레이아웃</label>
-            <p>4. 자기 자신을 설명할 수 있는 것을 많이 써주세요 (넣고 싶은 기능, 스타일 등)</p>
-            <textarea placeholder="이게 있어야 내가 뭐라도 만들어준다"></textarea>
-            <button type="submit">제출하기</button>
-        </form>
+            <div class="Personal_traits">
+                <h2>나의 강점 3가지</h2>
+                <h3>01 프로그래밍 언어</h3>
+                </h3>
+                <p>파이썬과 웹개발을 잘한다.</p>
+                <h3>02 과학적 사고</h3>
+                <p>TJ 성향이 강한 사람 때문인지 과학 (특히 물리)적 사고를 좋아한다.</p>
+                <h3>03 언어 능력</h3>
+                <p>인도네시아어, 한국어, 영어 등 3개국어에 능통하다.</p>
+            </div>
+            <div class="Achievement">
+                <h2>내가 걸어온 길</h2>
+                <h3>성과 | Achievement</h3>
+                <details>
+                    <summary>많지는 않을껄...?</summary>
+                    <ul>
+                        <li>2026.03 선린인터넷고등학교 다문화 골든벨 2등</li>
+                        <li>2026.03 선린인터넷고등학교 테이피 (TAPIE) 면접 합격</li>
+                        <li>2025 온 가족 북웨이브 100일 챌린지 수상</li>
+                        <li>2025.11 서울로봇고등학교 영재교육원 수료</li>
+                        <li>서울로봇고등학교 영재교육원 최우수상</li>
+                        <li>2025 영원중학교 교내 전람회 은상</li>
+                        <li>2025 한국이슬람교 꾸란 낭송대회 장려상</li>
+                        <li>2025 한국이슬람교 초승달장학금 수여</li>
+                        <li>2024 한국사능력검정시험 3급</li>
+                        <li>2024 이중언어페스티벌 장려상</li>
+                    </ul>
+                </details>
+                <h3>포트폴리오 | Portofolio</h3>
+                <ol>
+                    <li>첫 구글 사이트 제작 “Histolog”</li>
+                    <li>브이로그 리브토피아 영상 제작 (필모라)</li>
+                    <li>캡컷 및 MS 클립챔프를 활용한 영상 편집</li>
+                    <li>스크래치에서 만든 수학 퀴즈 프로그램</li>
+                    <li>깃허브 리포 (저장소) 운영 → halim-dev</li>
+                    <li>파이썬의 Turtle 모듈을 활용한 박스-뮬러 알고리즘 프로그램 개발 경험</li>
+                </ol>
+            </div>
     </main>
     <footer>
         <p>Site version: h.1.0</p>
@@ -85,5 +67,6 @@
         <p>©️ <i><mark>TAPIE 수업용 과제1</mark>할림이 자기소개 페이지, 저작권은 할림에게 있습니다.</i></p>
         <p>무단 도용, 불법 배포 시 벌금 약 5만원에 처합니다.</p>
     </footer>
-    </body>
+</body>
+
 </html>
