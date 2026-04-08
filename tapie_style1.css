@@ -39,9 +39,11 @@ header h1 {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     z-index: 1000;
     margin-bottom: 10px;
+    animation: 1s ease-in-out infinite;
 }
 
-.Menubar button {
+.Menubar a{
+    display: inline-block;
     background: none;
     border: none;
     margin: 0 15px;
@@ -49,11 +51,28 @@ header h1 {
     font-weight: bold;
     color: #000000;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 0.3s ease;
+    text-decoration:none;
 }
 
-.Menubar button:hover {
+.Menubar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 0;
+    height: 2px;
+    background: #7076779e;
+    transition: all 0.3s ease-in;
+}
+
+.Menubar a:hover::after {
+    width: 100%;
+}
+
+.Menubar a:hover {
     color: #7076779e;
+    transform: scale(1.1);
 }
 
 /* 메인 영역 */
