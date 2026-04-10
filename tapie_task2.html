@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Header Clone</title>
+  <link rel="stylesheet" href="tapie_style2.css">
+</head>
+<body>
+
+<header id="container">
+
+  <!-- 왼쪽 -->
+  <div id="start">
+    <button class="three-btn" type="button">☰</button>
+
+    <div id="logo">
+      <a href="https://www.youtube.com/">
+        <img src="yt_logo1.png" alt="logo">
+      </a>
+    </div>
+  </div>
+
+  <!-- 가운데 -->
+  <div id="center">
+    <form class="search-box" onsubmit="return false;">
+      <input type="text" placeholder="검색">
+      <button type="button">
+        <img src="yt_searchgoggle.png" alt="search">
+      </button>
+    </form>
+
+    <button id="voice-btn" type="button">
+      <img src="yt_speaker.png" alt="voice search">
+    </button>
+  </div>
+
+  <!-- 오른쪽 -->
+  <div id="end">
+    <button class="create-btn" type="button">
+      <img src="yt_create.png" alt="create">
+    </button>
+    <button class="icon-btn" type="button">
+      <img src="yt_notif.png" alt="notifications">
+    </button>
+    <img src="yt_profile.png" alt="profile" class="avatar">
+  </div>
+
+</header>
+
+<!-- 사이드바 -->
+<aside id="sidebar">
+
+  <div class="menu">
+    <a href="#" class="menu-item active">
+      <span class="icon">
+        <img src="yt_home.png" alt="">
+      </span>
+      <span class="text">Home</span>
+    </a>
+
+    <a href="#" class="menu-item">
+      <span class="icon">
+        <img src="yt_shorts.png" alt="">
+      </span>
+      <span class="text">Shorts</span>
+    </a>
+  </div>
+
+  <hr class="divider">
+
+  <div class="yt-sidebar-content">
+    <a href="#" class="menu-item">
+        <h3 class="text">Subscription<img src="yt_arrowright.png" alt=""></h3>
+      </a>
+    <ul class="sidebar-items">
+      <li class="sidebar-item">
+        <a href="#" class="sidebar-link">
+          <div class="icon-wrapper">
+            <img src="yt_awakeningmusics.png" alt="Awakening">
+          </div>
+          <span class="title">Awakening Music</span>
+          <div class="newness-dot"></div>
+        </a>
+      </li>
+
+      <li class="sidebar-item">
+        <a href="#" class="sidebar-link">
+          <div class="icon-wrapper">
+            <img src="yt_범작가.png" alt="">
+        </div>
+          <span class="title">범작가</span>
+        </a>
+      </li>
+
+      <li class="sidebar-item">
+        <a href="#" class="sidebar-link">
+          <div class="icon-wrapper">
+            <img src="yt_kim.png" alt="">
+        </div>
+          <span class="title">Real KIM</span>
+          <div class="newness-dot"></div>
+        </a>
+      </li>
+
+      <li class="sidebar-item">
+        <a href="#" class="sidebar-link">
+          <div class="icon-wrapper">
+            <img src="yt_kobokanaeru.png" alt="">
+          </div>
+          <span class="title">Kobo Kanaeru Ch. hololive-ID</span>
+          <div class="newness-dot"></div>
+        </a>
+      </li>
+
+      <li class="sidebar-item">
+        <a href="#" class="sidebar-link">
+          <div class="icon-wrapper">
+            <img src="yt_neffex.png" alt="">
+          </div>
+          <span class="title">NEFFEX</span>
+          <div class="newness-dot"></div>
+        </a>
+      </li>
+
+      <li class="sidebar-item">
+        <a href="#" class="sidebar-link">
+          <div class="icon-wrapper">
+            <img src="yt_just1min.png" alt="">
+          </div>
+          <span class="title">딱 1분만</span>
+          <div class="newness-dot"></div>
+        </a>
+      </li>
+
+      <li class="sidebar-item expander">
+        <a href="#" class="sidebar-link">
+          <div class="icon-wrapper">
+            <svg viewBox="0 0 24 24" class="arrow-icon">
+              <path d="M18.707 8.793a1 1 0 00-1.414 0L12 14.086 6.707 8.793a1 1 0 10-1.414 1.414L12 16.914l6.707-6.707a1 1 0 000-1.414Z"></path>
+            </svg>
+          </div>
+          <span class="title">Show more</span>
+        </a>
+      </li>
+    </ul>
+
+  </div>
+
+  </div>
+  <hr class="divider">
+  <div class="menu">
+  <a href="#" class="menu-item">
+    <h3 class="text">You<img src="yt_arrowright.png" alt=""></h3>
+  </a>
+
+  <a href="#" class="menu-item">
+    <span class="icon">
+      <img src="yt_history.png" alt="">
+    </span>
+    <span class="text">History</span>
+  </a>
+
+  <a href="#" class="menu-item">
+    <span class="icon">
+      <img src="yt_playlist.png" alt="">
+    </span>
+    <span class="text">Playlists</span>
+  </a>
+
+  <a href="#" class="menu-item">
+    <span class="icon">
+      <img src="yt_watchedlater.png" alt="">
+    </span>
+    <span class="text">Watch later</span>
+  </a>
+
+  <a href="#" class="menu-item">
+    <span class="icon">
+      <img src="yt_like.png" alt="">
+    </span>
+    <span class="text">Liked videos</span>
+  </a>
+
+  <a href="#" class="menu-item">
+    <span class="icon">
+      <img src="yt_yourvideos.png" alt="">
+    </span>
+    <span class="text">Your videos</span>
+  </a>
+
+  <a href="#" class="menu-item">
+    <span class="icon">
+      <img src="yt_downloads.png" alt="">
+    </span>
+    <span class="text">Downloads</span>
+  </a>
+
+</div>
+<hr class="divider">
+  <div class="menu">
+    <h3 class="explore">Explore</h3>
+
+  <a href="#" class="menu-item">
+    <span class="icon">
+      <img src="yt_shopping.png" alt="">
+    </span>
+    <span class="text">Shopping</span>
+  </a>
+
+  <a href="#" class="menu-item">
+    <span class="icon">
+      <img src="yt_music.png" alt="">
+    </span>
+    <span class="text">Music</span>
+  </a>
+
+  <a href="#" class="menu-item">
+    <span class="icon">
+      <img src="yt_movie.png" alt="">
+    </span>
+    <span class="text">Movie</span>
+  </a>
+
+  <a href="#" class="sidebar-link">
+    <div class="icon-wrapper">
+      <img src="yt_arrowbottom.png" alt="">
+    </div>
+    <span class="title">Show more</span>
+  </a>
+
+  <hr class="divider">
+  <div class="menu">
+    <h3 class="explore">More from YouTube</h3>
+
+  <a href="#" class="menu-item">
+    <span class="icon">
+      <img src="yt_youtubepremium.png" alt="">
+    </span>
+    <span class="text">YouTube Premium</span>
+  </a>
+
+  <a href="#" class="menu-item">
+    <span class="icon">
+      <img src="yt_youtubemusic.png" alt="">
+    </span>
+    <span class="text">YouTube Music</span>
+  </a>
+
+  <a href="#" class="menu-item">
+    <span class="icon">
+      <img src="yt_youtubekids.png" alt="">
+    </span>
+    <span class="text">YouTube Kids</span>
+  </a>
+
+  <hr class="divider">
+  <a href="#" class="menu-item">
+    <span class="icon">
+      <img src="yt_reporthistory.png" alt="">
+    </span>
+    <span class="text">Report history</span>
+  </a>
+
+  <hr class="divider">
+  <div class="sidebar-footer">
+
+  <div class="footer-links">
+    <a href="#">About</a>
+    <a href="#">Press</a>
+    <a href="#">Copyright</a>
+    <a href="#">Contact us</a>
+    <a href="#">Creators</a>
+    <a href="#">Advertise</a>
+    <a href="#">Developers</a>
+  </div>
+
+  <div class="footer-links">
+    <a href="#">Terms</a>
+    <a href="#">Privacy</a>
+    <a href="#">Policy & Safety</a>
+    <a href="#">How YouTube works</a>
+    <a href="#">Test new features</a>
+  </div>
+
+  <div class="footer-info">
+    © 2026 Google LLC, Sundar Pichai, 1600 Amphitheatre Parkway, Mountain View CA 94043, USA
+  </div>
+
+  <div class="footer-links blue">
+    <a href="#">Business Information</a>
+    <a href="#">Report illegally filmed content</a>
+  </div>
+
+  <div class="footer-info">
+    Products shown, tagged or featured on YouTube by creators are sold by merchants and are subject to merchant's terms and conditions. YouTube does not sell these products and is not responsible for them.
+  </div>
+
+</div>
+
+</div>
+</aside>
+
+<!-- 메인 콘텐츠 -->
+<main>
+  <img class="themes" src="theme.png" alt="">
+  <img class="" src="Screenshot 2026-04-09 at 10.30.39 PM.png" alt="">
+  <img src="Screenshot 2026-04-09 at 10.12.49 PM.png" alt="">
+  <img src="Screenshot 2026-04-09 at 10.31.24 PM.png" alt="">
+  <img src="Screenshot 2026-04-09 at 10.32.11 PM.png" alt="">
+  <img src="Screenshot 2026-04-09 at 10.32.49 PM.png" alt="">
+</main>
+
+</body>
+</html>
+</aside>

@@ -1,0 +1,333 @@
+/* 1. 전체 */
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #ffffff;
+  color: #0f0f0f;
+}
+
+/* 2. 헤더 */
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  padding: 0 16px;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* 왼쪽 */
+#start {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#logo img {
+  height: 40px;
+}
+
+/* 가운데 */
+#center {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  justify-content: center;
+}
+
+/* 핵심 수정: 반응형 검색창 */
+.search-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.search-box input {
+  flex: 1;
+  height: 40px;
+  padding: 0 16px;
+  border: 1px solid #ccc;
+  border-radius: 40px 0 0 40px;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-box button {
+  width: 64px;
+  height: 42px;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 40px 40px 0;
+  cursor: pointer;
+}
+
+.search-box button img {
+  width: 30px;
+  opacity: 1;
+}
+
+.three-btn{
+  font-size: 30px;
+  background: none;
+  border: none;
+}
+
+.three-btn:hover{
+  background-color: #f2f2f2;
+  border-radius: 50px;
+}
+
+/* 음성 버튼 */
+#voice-btn {
+  width: 40px;
+  height: 40px;
+  background-color: #f8f8f8;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+#voice-btn img {
+  width: 24px;
+  opacity: 0.7;
+}
+
+/* 오른쪽 */
+#end {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.create-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #f2f2f2;
+  border: none;
+  padding: 0   12px;
+  height: 36px;
+  border-radius: 18px;
+  cursor: pointer;
+}
+
+.create-btn img {
+  width: 75px;
+  height: 30px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.icon-btn img {
+  position: relative;
+  top: 5px;
+  width: 30px;
+  height: 40px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+/* 3. 사이드바 */
+#sidebar {
+  width: 240px;
+  background-color: #ffffff;
+  height: calc(100vh - 56px);
+  position: fixed;
+  top: 56px;
+  left: 0;
+  padding-top: 12px;
+  overflow-y: auto;
+  border-right: 1px solid #e5e5e5;
+}
+
+/* 메뉴 */
+.menu-item,
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 16px;
+  text-decoration: none;
+  color: #0f0f0f;
+  gap: 16px;
+  border-radius: 10px;
+}
+
+/* 🔥 핵심 수정: margin 제거 */
+.menu-item:hover,
+.sidebar-link:hover {
+  background-color: #f2f2f2;
+}
+
+.menu-item.active {
+  background-color: #ffffff;
+  font-weight: bold;
+}
+
+/* 아이콘 */
+.icon img,
+.icon-wrapper img {
+  width: 24px;
+  height: 24px;
+}
+
+/* 리스트 */
+.sidebar-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-section-title {
+  padding: 16px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.placeholder-img {
+  width: 24px;
+  height: 24px;
+  background-color: #e5e5e5;
+  border-radius: 50%;
+}
+
+/* 🔥 divider 통일 */
+.divider {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  margin: 12px 0;
+}
+
+/* 4. 🔥🔥 메인 콘텐츠 (가장 중요) */
+main {
+  margin-top: 56px;       /* header 높이 */
+  margin-left: 240px;     /* sidebar 너비 */
+  padding: 24px;
+}
+
+/* 테스트용 이미지 */
+main img {
+  max-width: 100%;
+}
+.menu {
+  padding: 8px 0;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 40px;
+  padding: 0 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #0f0f0f;
+  transition: background-color 0.2s;
+}
+
+/* 🔥 hover 효과 */
+.menu-item:hover {
+  background-color: #f2f2f2;
+}
+
+/* 아이콘 */
+.menu-item .icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.menu-item img{
+  width: 16x;
+  height: 16px;
+}
+
+/* 텍스트 */
+.menu-item .text {
+  font-size: 14px;
+}
+
+.icon-wrapper {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0; /* 🔥 찌그러짐 방지 */
+}
+
+.icon-wrapper img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;   /* 🔥 원형 만들기 */
+  object-fit: cover;    /* 🔥 잘라내기 */
+}
+
+
+.expander .title {
+  font-weight: 500;
+}
+
+.section-arrow {
+  width: 16px;
+  height: 16px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.explore{
+  font-size: 14px;
+  padding: 10px;
+}
+
+.sidebar-footer {
+  padding: 16px;
+  font-size: 13px;
+  color: #606060;
+}
+
+/* 링크 묶음 */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  margin-bottom: 12px;
+}
+
+/* 링크 스타일 */
+.footer-links a {
+  text-decoration: none;
+  color: #3c3a3a;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* 파란 링크 */
+.footer-links.blue a {
+  color: #065fd4;
+}
+
+/* 설명 텍스트 */
+.footer-info {
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+.themes{
+  position: fixed;
+  top: 50px;
+  justify-content: center;
+}
