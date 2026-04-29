@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="simulasi_style.css">
+</head>
+<body>
+    <header class="sim-header">
+        <img class="logo" src="turtle-logo.jpg" alt="Turtle logo">
+        <h1 class="judul">Muller Turtle Simulator</h1>
+        <h3 class="judul">Website simulasi box-muller dengan kura-kura</h3>
+        <nav class="menu">
+            <a href="https://en.wikipedia.org/wiki/Box%E2%80%93Muller_transform">ℹ️ Apa itu Algoritma Box-Muller?</a>
+            <a href="https://github.com/widehan-habjak1/halim-dev/blob/main/box_muller.py">💻 Lihat Code</a>
+        </nav>
+    </header>
+    <main>
+        <section class="playground">
+            <h2>Simulasi</h2>
+
+            <div class="controls">
+                <label>
+                    Jumlah data (n)
+                    <input id="sample-count" type="number" min="10" max="5000" value="500">
+                </label>
+
+                <button id="run-simulation" type="button">Jalankan Simulasi</button>
+                <button id="reset-canvas" type="button">Reset Data</button>
+            </div>
+
+            <div class="stats" aria-live="polite">
+                <p><strong>Data 1:</strong> <span id="uniform-count">-</span></p>
+                <p><strong>Data 2:</strong> <span id="gaussian-count">-</span></p>
+            </div>
+
+            <div class="canvas-grid">
+                <div class="plot-card">
+                    <h4>Uniform Data</h4>
+                    <canvas id="uniform-canvas" width="420" height="420" aria-label="Uniform distribution canvas"></canvas>
+                </div>
+
+                <div class="plot-card">
+                    <h4>Box-Muller Transformed Data</h4>
+                    <canvas id="gaussian-canvas" width="420" height="420" aria-label="Gaussian distribution canvas"></canvas>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="simulasi_app.js"></script>
+</body>
+</html>
