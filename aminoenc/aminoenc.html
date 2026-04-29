@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aminooenc | 곁사슬 백과사전</title>
+    <link rel="stylesheet" href="./aminoenc_design.css">
+    <script src="./aminoenc_howitworks.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>aminoenc</h1>
+        <nav>
+            <a href="#home">홈</a>
+            <a href="#nonpolar">비극성</a>
+            <a href="#polar">극성 중성</a>
+            <a href="#negative">산성</a>
+            <a href="#positive">염기성</a>
+            <a href="#special">특수</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="intro">
+            <div>
+                <p class="small-title">Side-Chain (R) Encyclopedia</p>
+                <h2>곁사슬 백과사전</h2>
+                <p>
+                    단백질을 구성하는 기본 단위체가 아미노산이고, 그 아미노산을 결정하는 것이 바로
+                    곁사슬 (R)이다.
+                </p>
+            </div>
+
+            <div class="structure-box"> 
+                <img src="Amino-Acid-Structure-1.png" alt="아미노산 공통 구조">
+            </div>
+        </section>
+
+        <section id="dictionary" class="dictionary">
+            <div class="section-title">
+                <p class="small-title">분류</p>
+                <h2>곁사슬의 성질들</h2>
+            </div>
+
+            <div class="tabs">
+                <a href="#nonpolar">비극성</a>
+                <a href="#polar">극성 중성</a>
+                <a href="#negative">산성</a>
+                <a href="#positive">염기성</a>
+                <a href="#special">특수</a>
+            </div>
+
+            <article class="category-info">
+                <h3 id="categoryTitle">비극성</h3>
+                <p id="categoryText"></p>
+            </article>
+
+            <div id="aminoList" class="amino-list"></div>
+        </section>
+    </main>
+</body>
+</html>
