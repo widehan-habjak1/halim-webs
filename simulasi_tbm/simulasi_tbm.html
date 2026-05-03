@@ -3,22 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MTS | Muller Turtle Simulator</title>
     <link rel="stylesheet" href="simulasi_style.css">
 </head>
 <body>
     <header class="sim-header">
         <img class="logo" src="turtle-logo.jpg" alt="Turtle logo">
-        <h1 class="judul">Muller Turtle Simulator</h1>
-        <h3 class="judul">Website simulasi box-muller dengan kura-kura</h3>
-        <nav class="menu">
-            <a href="https://en.wikipedia.org/wiki/Box%E2%80%93Muller_transform">ℹ️ Apa itu Algoritma Box-Muller?</a>
-            <a href="https://github.com/widehan-habjak1/halim-dev/blob/main/box_muller.py">💻 Lihat Code</a>
-        </nav>
+        <div class="landing-header">
+            <h1 class="judul">Muller Turtle Simulator</h1>
+            <h3 class="subjudul">"Bandingkan distribusi uniform dan Box-Muller dengan simulator."</h3>
+            <nav class="menu">
+                <a href="https://en.wikipedia.org/wiki/Box%E2%80%93Muller_transform">🧮 Apa itu Algoritma Box-Muller?</a>
+                <a href="https://github.com/widehan-habjak1/halim-dev/blob/main/box_muller.py">💻 Lihat Code Program</a>
+                <a href="Simulasi Algoritma Box-Muller di dalam Dunia Komputer_Riset Kelas 11 Ganjil_Halim.docx">📑 Lihat Proyek Riset (Download)</a>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="playground">
-            <h2>Simulasi</h2>
+            <div class="simulasi_title">
+                <h2>🔢 Simulasi 🧪</h2>
+                <p>Angka acak yang dibuat komputer sebenarnya tidak benar-benar acak — ia mengikuti pola tersembunyi. Algoritma Box-Muller hadir untuk mengubahnya menjadi distribusi yang lebih alami. Di simulator ini, kamu bisa melihat langsung perbedaan keduanya dalam bentuk titik-titik yang tersebar di layar.</p>
+            </div>
 
             <div class="controls">
                 <label>
@@ -37,13 +43,15 @@
 
             <div class="canvas-grid">
                 <div class="plot-card">
-                    <h4>Uniform Data</h4>
+                    <h4>Distribusi Uniform</h4>
                     <canvas id="uniform-canvas" width="420" height="420" aria-label="Uniform distribution canvas"></canvas>
+                    <p class="plot-info">Distribusi Uniform: distribusi acak yang mengikuti pola uniform, titik-titik tidak terpencar secara alami.</p>
                 </div>
 
                 <div class="plot-card">
-                    <h4>Box-Muller Transformed Data</h4>
+                    <h4>Distribusi Gaussian (Box-Muller)</h4>
                     <canvas id="gaussian-canvas" width="420" height="420" aria-label="Gaussian distribution canvas"></canvas>
+                    <p class="plot-info">Distribusi Gaussian (Box-Muller): distribusi acak yang mengikuti pola normal, titik-titik terpencar secara alami.</p>
                 </div>
             </div>
         </section>

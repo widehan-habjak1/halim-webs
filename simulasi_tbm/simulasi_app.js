@@ -61,7 +61,7 @@ function drawPoint(ctx, x, y, color) {
 }
 
 function plotUniform(points) {
-    clearPlot(uniformCtx, uniformCanvas, "Turtle uniform random dots");
+    clearPlot(uniformCtx, uniformCanvas, "Dot Graphic");
 
     const scale = 100;
     const centerX = uniformCanvas.width / 2;
@@ -75,7 +75,7 @@ function plotUniform(points) {
 }
 
 function plotGaussian(points) {
-    clearPlot(gaussianCtx, gaussianCanvas, "Box-Muller gaussian dots");
+    clearPlot(gaussianCtx, gaussianCanvas, "Dot Graphic");
 
     const scale = 100;
     const centerX = gaussianCanvas.width / 2;
@@ -122,8 +122,8 @@ function runSimulation() {
 }
 
 function resetSimulation() {
-    clearPlot(uniformCtx, uniformCanvas, "Turtle uniform random dots");
-    clearPlot(gaussianCtx, gaussianCanvas, "Box-Muller gaussian dots");
+    clearPlot(uniformCtx, uniformCanvas, "Dot Graphic");
+    clearPlot(gaussianCtx, gaussianCanvas, "Dot Graphic");
     uniformCountValue.textContent = "-";
     gaussianCountValue.textContent = "-";
     z0Value.textContent = "-";
