@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fdf2f8 0%, #eef6ff 50%, #fef3c7 100%);
+  color: #2f2a3a;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px 24px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 2.2rem;
+  color: #4f3d7a;
+}
+
+.date {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+  color: #7a5fb8;
+  font-weight: 600;
+}
+
+.tagline {
+  margin: 0;
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 30px 20px 40px;
+}
+
+.journal-section {
+  background: white;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 12px 35px rgba(79, 61, 122, 0.12);
+}
+
+label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 700;
+  color: #4f3d7a;
+}
+
+#journal {
+  width: 100%;
+  min-height: 260px;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+  padding: 16px;
+  border: 1px solid #e5dff5;
+  border-radius: 14px;
+  font-size: 1rem;
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#journal:focus {
+  border-color: #8b6eea;
+  box-shadow: 0 0 0 3px rgba(139, 110, 234, 0.18);
+}
+
+.submit-btn {
+  margin-top: 14px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #8b6eea 0%, #6d5dfc 100%);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 8px 20px rgba(109, 93, 252, 0.22);
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(109, 93, 252, 0.28);
+}
+
+.saved-journals-container {
+  margin-top: 24px;
+  display: grid;
+  gap: 12px;
+}
+
+.journal-entry {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #efe8ff;
+  border-left: 5px solid #8b6eea;
+  border-radius: 12px;
+  padding: 14px 16px;
+  box-shadow: 0 6px 16px rgba(79, 61, 122, 0.06);
+  color: #4b4560;
+}
+
+footer {
+  text-align: center;
+  padding: 24px 16px 32px;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  .journal-section {
+    padding: 18px;
+  }
+
+  #journal {
+    min-height: 220px;
+  }
+}

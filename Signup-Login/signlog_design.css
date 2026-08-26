@@ -1,0 +1,62 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input{
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    box-sizing: border-box;
+}
+
+input:focus{
+    border-color: rgb(255, 25, 0);
+    box-shadow: 0 0 0 3px rgba(0, 100, 255, 0.2);
+}
+
+.field{
+    margin-bottom: 16px;
+}
+
+.field label{
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+
+}
+
+.field.error input{
+    border-color: red;
+}
+
+.field.error .error-message{
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.checkbox-field{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkbox-field input{
+    width: auto;
+}
+
+.signed{
+    background: #2a7a3b;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.signed:hover{
+    background: #1f5c2c;
+    transform: translateY(-3px);
+}

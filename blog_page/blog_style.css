@@ -1,0 +1,132 @@
+/* Enhanced layout with better spacing and card-based design */
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+header{
+    text-align: center;
+}
+
+.layout{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    padding: 40px 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Card-style article design with subtle shadows */
+.posts article{
+    border-bottom: none;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.posts article:hover{
+    box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+    transform: translateY(-2px);
+}
+
+/* Improved image styling */
+.posts article img{
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    display: block;
+}
+
+/* Enhanced hover effect on titles */
+.posts article h2{
+    font-size: 20px;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+    line-height: 1.4;
+}
+
+.posts article h2:hover{
+    color: #2a7a3b;
+    cursor: pointer;
+}
+
+/* Modern category label with better styling */
+.posts article .category-label{
+    display: inline-block;
+    background-color: #f0f4f8;
+    color: #2a7a3b;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.posts article .category-label:hover{
+    background-color: #2a7a3b;
+    color: #fff;
+}
+
+/* Sidebar category panel: adds a card-like container for the categories */
+.sidebar{
+    background: linear-gradient(145deg, #f8fbff, #eef4ff);
+    border: 1px solid #dce9f7;
+    border-radius: 16px;
+    padding: 24px;
+    height: fit-content;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.sidebar h3{
+    margin: 0 0 16px;
+    font-size: 20px;
+    color: #1f4d3d;
+    border-bottom: 2px solid #2a7a3b;
+    padding-bottom: 8px;
+}
+
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar li{
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-weight: 600;
+    color: #334155;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+.sidebar li:hover{
+    background: #2a7a3b;
+    color: #fff;
+    transform: translateX(4px);
+    box-shadow: 0 4px 10px rgba(42, 122, 59, 0.2);
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3%;
+    color: #989898;
+}
+
+/* Responsive layout: stacks the content and sidebar on smaller screens */
+@media (max-width: 768px){
+    .layout{
+        grid-template-columns: 1fr;
+    }
+}

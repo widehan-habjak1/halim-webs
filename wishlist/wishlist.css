@@ -1,0 +1,67 @@
+/* Use a softer dark gradient background and center the page content for a modern look */
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: sans-serif;
+    background: radial-gradient(circle at top, #14213d 0%, #000 70%);
+    color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Make the main heading more prominent with spacing and subtle shadow */
+h1 {
+    text-align: center;
+    margin-bottom: 5vh;
+    font-size: 3rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+}
+
+/* Use a responsive grid so the layout adjusts smoothly on smaller screens */
+.grid {
+    width: 100%;
+    max-width: 1240px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    justify-content: center;
+}
+
+/* Add a card style with soft glass-like borders and hover lift effect */
+.item {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    text-align: center;
+}
+
+.item:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.35);
+    border-color: rgba(255, 255, 255, 0.18);
+}
+
+/* Ensure images fit their cards nicely without cropping */
+.item img {
+    width: 100%;
+    display: block;
+    height: auto;
+    object-fit: contain;
+    background: rgba(0, 0, 0, 0.08);
+}
+
+.stars{
+    color: gold;
+    margin-bottom: 1vh;
+}
+
+.footer{
+    margin-top: 10%;
+}
